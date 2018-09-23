@@ -1,53 +1,69 @@
 <html>
-    <head>
-        <title>Accessibility Practice</title>
-        <link rel="stylesheet" href="index.css"></link>
-        <nav aria-label="Main Navigation">
-            <h1>
-                <a href="www.google.com">Olaaaaaa</a>
-            </h1>
+
+<head>
+    <title>Accessibility Practice</title>
+    <link rel="stylesheet" href="index.css"></link>
+    <nav aria-label="Main Navigation">
+        <h1>
+            <a href="www.google.com">Olaaaaaa</a>
+        </h1>
+    </nav>
+    <nav aria-labelledby="quicknav-heading">
+        <h2>
+            <a href="www.gertiesheshe.com">Carrrrlos</a>
+        </h2>
+    </nav>
+</head>
+
+<body>
+    <main>
+        <p tabindex="0">This is me</p>
+        <button>Tab Me</button>
+        <div>
+            <input type="checkbox" id="gertrude" />
+            <label for="gertrude">Gertrude</label>
+        </div>
+        <div>
+            <input type="checkbox" id="kidoti" />
+            <label for="kidoti">kidoti</label>
+        </div>
+        <div class="checkbox" tabindex="0" role="checkbox" aria-checked="True">
+            <div class="checked">Label one</div>
+        </div>
+        <div>
+            <div>Recipes
+                <span>98</span>
+            </div>
+            <div>Menu Items
+                <span>1</span>
+            </div>
+            <div>Grocery Products
+                <span>1</span>
+            </div>
+        </div>
+        <nav role=”navigation”>
+            <ul role=”menubar”>
+                <li>
+                    <button role=”menuitem”>Recipes
+                        <span>98</span>
+                    </button>
+                </li>
+                <li>
+                    <button role=”menuitem”>Menu Items
+                        <span>1</span>
+                    </button>
+                </li>
+                <li>
+                    <button role=”menuitem”>Grocery Products
+                        <span>1</span>
+                    </button>
+                </li>
+            </ul>
         </nav>
-        <nav aria-labelledby="quicknav-heading">
-            <h2>
-                <a href="www.gertiesheshe.com">Carrrrlos</a>
-            </h2>
-        </nav>
-    </head>
-    <body>
-        <main>
-            <p tabindex="0">This is me</p>
-            <button>Tab Me</button>
-                <div>
-                    <input type="checkbox" id="gertrude" />
-                    <label for="gertrude">Gertrude</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="kidoti" />
-                    <label for="kidoti">kidoti</label>
-                </div>
-                <div class="checkbox" tabindex="0" role="checkbox" aria-checked="True">
-                    <div class="checked">Label one</div>
-                </div>
-                <div>
-                    <div>Recipes<span>98</span></div>
-                    <div>Menu Items<span>1</span></div>
-                    <div>Grocery Products<span>1</span></div>
-                </div>
-                <nav role=”navigation”>
-                    <ul role=”menubar”>
-                      <li>
-                        <button role=”menuitem”>Recipes<span>98</span></button>
-                      </li>
-                      <li>
-                        <button role=”menuitem”>Menu Items<span>1</span></button>
-                      </li>
-                      <li>
-                        <button role=”menuitem”>Grocery Products
-                          <span>1</span>
-                        </button>
-                      </li>
-                    </ul>
-                  </nav>
-        </main>
-    </body>
+        <div role="button" onkeyup="if(event.keyCode==13||event.keyCode==32){performAction()};" onclick="performAction();" tabindex="0">Perform action</div>
+        <!-- Button -->
+        <button type="button" onclick="performAction();">Perform action</button>
+    </main>
+</body>
+
 </html>
