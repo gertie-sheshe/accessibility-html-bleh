@@ -1,0 +1,15 @@
+div.checkbox {
+    border-radius: 50%;
+    border: 2px solid gray;
+    width: 30;
+    height: 30;
+    cursor: pointer;
+}
+
+.checked {
+    border-radius: 50%;
+    height: 28;
+    width: 28;
+    background-color: red;
+    margin: 1;
+}
