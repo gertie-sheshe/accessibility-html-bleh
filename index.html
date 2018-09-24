@@ -63,6 +63,11 @@
         <div role="button" onkeyup="if(event.keyCode==13||event.keyCode==32){performAction()};" onclick="performAction();" tabindex="0">Perform action</div>
         <!-- Button -->
         <button type="button" onclick="performAction();">Perform action</button>
+        <button>Close Me</button>
+        <!-- Accessible markup -->
+        <button aria-label=”Close-layer”></button>
+        <!-- Make it accessible via CSS. Have text hidden. Too much work -->
+        <button style="text-indent:100%;overflow:hidden;padding:0;white-space:nowrap;">Close layer</button>
     </main>
 </body>
 
